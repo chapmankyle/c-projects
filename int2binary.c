@@ -14,7 +14,8 @@ int main()
 	char buffer[BUF_SIZE];
 	buffer[BUF_SIZE - 1] = '\0';
 
-	val = 14;
+	printf("Enter a value to convert: ");
+	scanf("%d", &val);
 	int2bin(val, buffer, BUF_SIZE - 1);
 	printf("%d in binary is :\t%s\n", val, buffer);
 
@@ -33,13 +34,13 @@ int main()
  */
 char *int2bin(int a, char *buffer, int buf_size) {
 	int i;
-    buffer += (buf_size - 1);
+	buffer += (buf_size - 1);
 
-    for (i = buf_size - 1; i >= 0; i--) {
-        *buffer-- = (a & 1) + '0';
+	for (i = buf_size - 1; i >= 0; i--) {
+		*buffer-- = (a & 1) + '0';
 
 		a >>= 1;
-    }
+	}
 
-    return buffer;
+	return buffer;
 }
