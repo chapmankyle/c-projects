@@ -5,6 +5,9 @@
 
 char *int2bin(int a, char *buffer, int buff_size);
 
+/*
+ * Main function
+ */
 int main()
 {
 	int val = 0;
