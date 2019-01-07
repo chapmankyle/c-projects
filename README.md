@@ -3,7 +3,7 @@ Public repo for all C projects I *attempt* or actually finish.
 
 ## Current files include:
 
-### int2binary
+### *int2binary*
 Program that converts any `integer` into the `binary char *` representation of the integer.
 
 *Let's look at an example:*
@@ -15,7 +15,9 @@ Using the integer `14`, the output should be
 
 Click [here](https://github.com/chapmankyle/c-projects/blob/master/int2binary.c) to go directly to the file.
 
-### degree_sum
+---
+
+### *degree_sum*
 Program that takes 2 numbers as input, `n` and `m`, and computes the sum of the degree.
 
 Okay, that sounds complicated, here's an **example**:
