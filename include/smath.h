@@ -9,6 +9,11 @@
 #ifndef SMATH_H
 #define SMATH_H
 
+/* affects linkage */
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* define all constants */
 #define S_E     2.7182818284590452354
 #define S_PI    3.1415926535897932385
@@ -29,6 +34,8 @@ typedef signed int          int32_t;
 typedef unsigned int        uint32_t;
 typedef signed long int     int64_t;
 typedef unsigned long int   uint64_t;
+
+typedef enum { false = 0, true = 1 } boolean;
 
 /*
  * Rounds [f] to the nearest 1.
@@ -122,5 +129,9 @@ float ssqrt(float f)
 
 /* define at bottom so it can use functions above */
 #define distance(ax, ay, bx, by)    ssqrt(ssquare((float)bx - (float)ax) + ssquare((float)by - (float)ay))
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
