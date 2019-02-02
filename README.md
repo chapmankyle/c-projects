@@ -1,7 +1,16 @@
 # C Projects
 Public repo for all C projects I *attempt* or actually finish.
 
-## Current files include:
+## Current files/folders include:
+
+### *include*
+Folder that contains all the extra C header files that I occasionally use.
+
+| Files     | Description                                                          | Link                                   |
+| ---------:| -------------------------------------------------------------------- | -------------------------------------- |
+| `smath.h` | A Simple Math library that can only do a limited amount of functions | [here](../master/include/smath.h) |
+
+---
 
 ### *int2binary*
 Program that converts any `integer` into the `binary char *` representation of the integer.
