@@ -1,18 +1,19 @@
 # C Projects
 Public repo for all C projects I *attempt* or actually finish.
 
-## Current files/folders include:
+## Current files (:page_facing_up:) / folders (:open_file_folder:) include:
 
-### *include*
+### *include* :open_file_folder:
 Folder that contains all the extra C header files that I occasionally use.
 
 | Files     | Description                                                          | Link                                   |
-| ---------:| -------------------------------------------------------------------- | -------------------------------------- |
-| `smath.h` | A Simple Math library that can only do a limited amount of functions | [here](../master/include/smath.h) |
+| :--------:| -------------------------------------------------------------------- | -------------------------------------- |
+| `smath.h` | A Simple Math library that can only do a limited amount of functions | [here](../master/include/smath.h)      |
+| `svector.h` | A Simple 2D Vector library for working with vectors in 2D space    | [here](../master/include/svector.h)    |
 
 ---
 
-### *int2binary*
+### *int2binary* :page_facing_up:
 Program that converts any `integer` into the `binary char *` representation of the integer.
 
 *Let's look at an example:*
@@ -22,11 +23,11 @@ Using the integer `14`, the output should be
 14 in binary is: 00001110
 ```
 
-Click [here](https://github.com/chapmankyle/c-projects/blob/master/int2binary.c) to go directly to the file.
+Click [here](../master/int2binary.c) to go directly to the file.
 
 ---
 
-### *degree_sum*
+### *degree_sum* :page_facing_up:
 Program that takes 2 numbers as input, `n` and `m`, and computes the sum of the degree.
 
 Okay, that sounds complicated, here's an **example**:
@@ -48,4 +49,4 @@ As you can see, `n` is used as a starting point to count up to and `m` is used t
 1 + 2 + ... + 20 + 21 = 231
 sum(6, 2) = 231
 ```
-Click [here](https://github.com/chapmankyle/c-projects/blob/master/degree_sum.c) to test it out for yourself.
+Click [here](../master/degree_sum.c) to test it out for yourself.
