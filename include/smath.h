@@ -127,6 +127,42 @@ float ssqrt(float f)
     return 1.0 / y;
 }
 
+/*
+ * Computes the sine of angle [theta] using Taylor Series expansion
+ * @param   theta
+ *      angle to find sine of
+ * @return  sine of angle [theta] in radians
+ */
+float ssin(float theta)
+{
+    return (theta - (spow(theta, 3) / 6) + (spow(theta, 5) / 120) -
+            (spow(theta, 7) / 5040));
+}
+
+/*
+ * Computes the cosine of angle [theta] using Taylor Series expansion
+ * @param   theta
+ *      angle to find cosine of
+ * @return  cosine of angle [theta] in radians
+ */
+float scos(float theta)
+{
+    return (1 - (spow(theta, 2) / 2) + (spow(theta, 4) / 24) -
+            (spow(theta, 6) / 720));
+}
+
+/*
+ * Computes the arc-tan of angle [theta]
+ * @param   theta
+ *      angle to find arc-tan of
+ * @return  arc-tan of angle [theta]
+ */
+float sarctan(float theta)
+{
+    return (theta - (spow(theta, 3) / 3) + (spow(theta, 5) / 5) -
+            (spow(theta, 7) / 7));
+}
+
 /* define at bottom so it can use functions above */
 #define distance(ax, ay, bx, by)    ssqrt(ssquare((float)bx - (float)ax) + ssquare((float)by - (float)ay))
 
