@@ -1,4 +1,6 @@
 # C Projects
+[![License](https://img.shields.io/github/license/chapmankyle/c-projects.svg?color=blue&style=for-the-badge)](https://github.com/chapmankyle/c-projects/blob/master/LICENSE)
+
 Public repo for all C projects I *attempt* or actually finish.
 
 ## Current files (:page_facing_up:) / folders (:open_file_folder:) include:
